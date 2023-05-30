@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Định giá báo hiểm xe ô tô</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:300,500&amp;display=swap'>
+<style>
+:root{
+  background-color: #bceef5;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  text-align: center
+  margin-top: 15vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  line-height: 1.5;
+  color: #000;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 8px;
+}
+@media (min-width: 32rem) {
+  body {
+    font-size: 102.5%;
+  }
+    .movie{
+    margin-right: 25vh;
+    margin-left: 25vh;
+  }
+}
+@media (min-width: 54rem) {
+  body {
+    font-size: 105%;
+  }
+}
+@media (min-width: 65rem) {
+  body {
+    font-size: 107.5%;
+  }
+}
+@media (min-width: 75em) {
+  body {
+    font-size: 110%;
+  }
+}
+@media (min-width: 91rem) {
+  body {
+    font-size: 115%;
+  }
+}
+@media (min-width: 115rem) {
+  body {
+    font-size: 120%;
+  }
+}
+@media (min-width: 130rem) {
+  body {
+    font-size: 125%;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.book{
+    display: block;
+    text-align: center;
+}
+book_name{
+    width: 70%;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid grey;
+}
+#submission_button{
+    width: 25%;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 5px;
+    color: white;
+    background-color:rgb(25, 139, 253);
+    border-style: none;
+}
+@media screen and (max-width:600px) {
+    .book{
+        padding-top: 11vh;
+        padding-bottom: 11vh;
+    }
+}
+h1{
+  text-align: center;
+}
+.creds{
+  margin-left: 26vh;
+  margin-top: 1vh;
+}
+label {text-align: center;}
+input {text-align: center;}
+</style>
+</head>
+<body>
+  <h1><u></u>CAR INSURANCE PRICING</u></h1>
+  <div class="auto">
+    <form action="/" method="POST">
+      <label id="Age" align='middle'>Age:</label><br>
+      <input type='number' id="Age" name="Age" maxlength="2" size="30"><br><br>
+      <label id="Marital">Marital status:</label><br>
+      <input list='Mar' type='text' id="Marital" name="Marital" size="30">
+      <datalist id="Mar">
+        <option value="Married">
+        <option value="Divorced">
+        <option value="Single">
+      </datalist><br><br>
+      <label id="Employed">Employment status:</label><br>
+      <input list='Emp' type='text' id="Employed" name="Employed" size="30">
+      <datalist id="Emp">
+        <option value="Unemployed">
+        <option value="Employed">
+        <option value="Medical Leave">
+        <option value="Disabled">
+        <option value="Retired">
+      </datalist><br><br>
+      <label id="Location">Location code:</label><br>
+      <input list = 'loc'type='text' id="Location" name="Location" size="30">
+      <datalist id="loc">
+        <option value="Suburban">
+        <option value="Rural">
+        <option value="Urban">
+      </datalist><br><br>
+      <label id="State">State:</label><br>
+      <input list="sta"type='text' id="State" name="State" size="30">
+      <datalist id="sta">
+        <option value="California">
+        <option value="Arizona">
+        <option value="Oregon">
+        <option value="Washington">
+        <option value="Nevada">
+      </datalist><br><br>
+      <label id="Vehicle">Vehicle class:</label><br>
+      <input list ="veh" type='text' id="Vehicle" name="Vehicle" size="30">
+      <datalist id="veh">
+        <option value="SUV">
+        <option value="Sports Car">
+        <option value="Luxury Car">
+        <option value="Luxury SUV">
+        <option value="Two-Door Car">
+        <option value="Four-Door Car">
+      </datalist><br><br>
+      <label id="Driving">Months since driving:</label><br>
+      <input type='number' id="Driving" name="Driving" size="30"><br><br>
+      <label id="Claim">Months since last claim:</label><br>
+      <input type='number' id="Claim" name="Claim" size="30"><br><br>
+      <label id="Coverage">Coverage:</label><br>
+      <input list='Cov' type='text' id="Coverage" name="Coverage" size="30">
+      <datalist id="Cov">
+        <option value="Basic">
+        <option value="Extended">
+        <option value="Premium">
+      </datalist><br><br>
+      <button type="submit" id="submission_button">Định giá</button>
+    </form>
+  </div>
+  <script src='https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js'></script>
+
+</body>
+</html>
